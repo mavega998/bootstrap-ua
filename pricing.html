@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <title>Proyecto Bootstrap - Universidad Austral</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">Proyecto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Nosotros</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="pricing.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Proyecto Bootstrap</h1>
+        <p class="lead">Este proyecto es una tarea puesta para demostrar los conocimientos adquirido en el curso,
+            sobreel manejo de Bootstrap 4.</p>
+        <hr class="my-4">
+        <p>Diseñando páginas web con Bootstrap 4, Universidad Austral - Coursera </p>
+        <a class="btn btn-primary btn-lg" href="https://es.coursera.org/learn/disenando-paginas-bootstrap4"
+            target="_blank" role="button">Ver más</a>
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Precios</li>
+        </ol>
+    </nav>
+
+    <div class="container mb-5 pb-5">
+        <div class="row">
+            <div class="col-12">
+                <h1>Nuestros Precios</h1>
+                <hr>
+                <h3>Sitios Web</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Plan</th>
+                            <th>Páginas</th>
+                            <th>Contacto</th>
+                            <th>Blog</th>
+                            <th>Correos</th>
+                            <th>Valor</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Básico</td>
+                                <td>Landing page</td>
+                                <td><span class="oi oi-check"></span></td>
+                                <td><span class="oi oi-x"></span></td>
+                                <td><span class="oi oi-check"></span> 1 Correo</td>
+                                <td><span class="oi oi-dollar"></span>300.000 / mes</td>
+                            </tr>
+                            <tr>
+                                <td>PYME</td>
+                                <td>Landing page y 2 Páginas</td>
+                                <td><span class="oi oi-check"></span></td>
+                                <td><span class="oi oi-x"></span></td>
+                                <td><span class="oi oi-check"></span> 5 Correos</td>
+                                <td><span class="oi oi-dollar"></span>700.000 / mes</td>
+                            </tr>
+                            <tr>
+                                <td>Corporativo</td>
+                                <td>Landing page y 5 Páginas</td>
+                                <td><span class="oi oi-check"></span></td>
+                                <td><span class="oi oi-check"></span></td>
+                                <td><span class="oi oi-check"></span> 10 Correos</td>
+                                <td><span class="oi oi-dollar"></span>1'300.000 / mes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Sistemas de Información</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Plan</th>
+                            <th>Bases de Datos</th>
+                            <th>Dominios</th>
+                            <th>Subdominios</th>
+                            <th>Valor</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Básico</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><span class="oi oi-x"></span></td>
+                                <td><span class="oi oi-dollar"></span>400.000 / mes</td>
+                            </tr>
+                            <tr>
+                                <td>PYME</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td><span class="oi oi-check"></span></td>
+                                <td><span class="oi oi-dollar"></span>800.000 / mes</td>
+                            </tr>
+                            <tr>
+                                <td>Corporativo</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td><span class="oi oi-check"></span></td>
+                                <td><span class="oi oi-dollar"></span>1'500.000 / mes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Automatizaciones</h3>
+                <p>
+                    Se cotizán en base al proyecto. Te invitamos a que nos dejes un mensaje para contactarte, haz clic
+                    <a href="contact.html">aquí</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-5">
+        <nav class="navbar fixed-bottom navbar-dark bg-dark d-flex justify-content-center">
+            <diw class="row">
+                <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
+                    <a class="navbar-brand text-info" href="https://twitter.com/mavega998" target="_blank">Twitter</a>
+                    <a class="navbar-brand text-primary" href="https://www.linkedin.com/in/michael-vega/"
+                        target="_blank">LinkedIn</a>
+                </div>
+                <div class="col-md col-sm-12 d-flex flex-column align-items-center">
+                    <address class="text-light">
+                        <span class="oi oi-phone"></span> (+57) 321 957 3208<br>
+                        <span class="oi oi-envelope-closed"></span> mavega998@misena.edu.co<br>
+                        <span class="oi oi-map-marker"></span> Cúcuta, Norte de Santander<br>
+                        Colombia
+                    </address>
+                </div>
+            </diw>
+        </nav>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
