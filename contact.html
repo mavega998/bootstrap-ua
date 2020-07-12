@@ -19,13 +19,13 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">Nosotros</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="contact.html">Contacto</a>
                 </li>
             </ul>
@@ -44,51 +44,48 @@
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
     </nav>
 
-    <div class="container">
+    <div class="container mb-5 pb-5">
         <div class="row">
-            <div class="col-md col-sm-12 d-flex flex-column">
-                <h3 class="text-center text-uppercase">Diseño Responsive</h3>
-                <p class="text-justify">Bootstrap nos permite realizar diseño responsive para nuestro sitio web, lo cual
-                    no permite que se adapte a cada dispositivo.</p>
-            </div>
-            <div class="col-md col-sm-12 d-flex flex-column">
-                <h3 class="text-center text-uppercase">Buen Aspecto Visual</h3>
-                <p class="text-justify">Bootstrap con su variedad de componentes nos permite darle un aspecto muy
-                    agradable a nuestro sitio web, siendo mas llamativo para los usuarios.</p>
-            </div>
-            <div class="col-md col-sm-12 d-flex flex-column">
-                <h3 class="text-center text-uppercase">Desarrollo Fácil</h3>
-                <p class="text-justify">Bootstrap facilita al desarrollador crear un diseño frontend sin que tenga
-                    tantos conocimientos del tema ni tener que realizar tantas modificaciones de estilos.</p>
-            </div>
-        </div>
-    </div>
-    <hr class="mt-2 mb-2">
-    <h1 class="text-center">Productos</h1>
-    <div class="d-flex flex-md-row flex-sm-column flex-wrap flex-md-nowrap justify-content-md-around mb-5 pb-5">
-        <div class="card m-2">
-            <div class="card-body">
-                <h2 class="text-muted">Sitios Web</h2>
-                <p>Diseñamos tu sitio web a tu medida, para posicionar tu negocio en internet.</p>
-                <button class="btn btn-info btn-block">Ver más</button>
-            </div>
-        </div>
-        <div class="card m-2">
-            <div class="card-body">
-                <h2 class="text-muted">Sistemas de Información</h2>
-                <p>Desarrollamos sistemas de información para tu empresa, para tener mejor control.</p>
-                <button class="btn btn-info btn-block">Ver más</button>
-            </div>
-        </div>
-        <div class="card m-2">
-            <div class="card-body">
-                <h2 class="text-muted">Automatizaciónes - Domotica</h2>
-                <p>Hacemos que tu casa, empresa o lo que desees este automatizado y funcione con tecnología.</p>
-                <button class="btn btn-info btn-block">Ver más</button>
+            <div class="col-12">
+                <h1>Deja tus comentarios</h1>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="email">Correo</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="news">
+                                <label for="news" class="form-check-label">Quiero recibir noticias a mi correo.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"></div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
