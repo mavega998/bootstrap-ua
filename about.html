@@ -31,9 +31,50 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contacto</a>
                 </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-link text-muted" data-toggle="modal"
+                        data-target="#exampleModal">
+                        PQRS
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PQRS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="tipo" class="col-form-label">Tipo de PQR</label>
+                            <select name="tipo" id="tipo" class="form-control">
+                                <option value="">Elija</option>
+                                <option value="peticion">Petición</option>
+                                <option value="queja">Queja</option>
+                                <option value="reclamo">Reclamo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje" class="col-form-label">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="jumbotron">
         <h1 class="display-4">Proyecto Bootstrap</h1>
@@ -56,38 +97,77 @@
         <div class="row">
             <div class="col-12">
                 <h1>Nosotros</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada fringilla enim vel dapibus.
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer
-                    et
-                    lobortis turpis. Donec consequat molestie mi, eu finibus ante ullamcorper convallis. Ut vel massa
-                    commodo, accumsan risus id, maximus erat. Vestibulum ac massa sit amet quam mattis lacinia eget vel
-                    augue. Suspendisse sem libero, pharetra et scelerisque sed, pretium malesuada nisi. Integer et erat
-                    imperdiet, aliquet eros sed, imperdiet tellus. Proin in nisi leo. Nunc interdum quis diam ac
-                    porttitor.
-                    Vivamus sollicitudin viverra tellus, blandit laoreet urna sollicitudin ac.
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Misión
+                                </button>
+                            </h2>
+                        </div>
 
-                    Fusce lectus arcu, vulputate sit amet egestas non, hendrerit id ante. Morbi cursus dolor ut odio
-                    volutpat varius. Ut nulla risus, ultricies ac odio a, gravida convallis nibh. Nulla eu laoreet sem.
-                    Sed
-                    condimentum neque malesuada, convallis urna in, luctus sem. Integer tristique convallis gravida.
-                    Suspendisse in lorem nec nulla dictum euismod vel non nisi. Etiam blandit vel arcu ac varius.
-                    Vestibulum
-                    ultricies vitae odio ut aliquam. Duis eu leo sollicitudin, scelerisque magna vitae, laoreet erat.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Vestibulum
-                    quis magna mollis, laoreet massa quis, mattis velit. Etiam lobortis ut elit vel porttitor. Donec nec
-                    urna felis. Etiam ultricies at velit tempus ullamcorper.
-
-                    Quisque turpis sapien, malesuada sit amet vulputate sed, accumsan quis diam. Etiam tincidunt
-                    venenatis
-                    fermentum. Etiam venenatis ipsum lobortis justo posuere, nec viverra enim fermentum. Phasellus
-                    congue
-                    fermentum nisl, a tempor erat commodo non. Ut sollicitudin egestas tellus tincidunt gravida. Mauris
-                    et
-                    massa sollicitudin, euismod sapien luctus, mattis nulla. Duis finibus pulvinar tincidunt. In hac
-                    habitasse platea dictumst.
-                </p>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Visión
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Valores
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <h2 class="my-2">Nuestro Equipo</h2>
                 <div class="d-flex flex-row justify-contente-center align-items-between">

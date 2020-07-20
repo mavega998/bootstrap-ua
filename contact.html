@@ -31,9 +31,50 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="contact.html">Contacto</a>
                 </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-link text-muted" data-toggle="modal"
+                        data-target="#exampleModal">
+                        PQRS
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PQRS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="tipo" class="col-form-label">Tipo de PQR</label>
+                            <select name="tipo" id="tipo" class="form-control">
+                                <option value="">Elija</option>
+                                <option value="peticion">Petición</option>
+                                <option value="queja">Queja</option>
+                                <option value="reclamo">Reclamo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje" class="col-form-label">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="jumbotron">
         <h1 class="display-4">Proyecto Bootstrap</h1>

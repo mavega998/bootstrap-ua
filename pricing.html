@@ -31,9 +31,50 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contacto</a>
                 </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-link text-muted" data-toggle="modal"
+                        data-target="#exampleModal">
+                        PQRS
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PQRS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="tipo" class="col-form-label">Tipo de PQR</label>
+                            <select name="tipo" id="tipo" class="form-control">
+                                <option value="">Elija</option>
+                                <option value="peticion">Petición</option>
+                                <option value="queja">Queja</option>
+                                <option value="reclamo">Reclamo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje" class="col-form-label">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="jumbotron">
         <h1 class="display-4">Proyecto Bootstrap</h1>
@@ -57,85 +98,144 @@
             <div class="col-12">
                 <h1>Nuestros Precios</h1>
                 <hr>
-                <h3>Sitios Web</h3>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <th>Plan</th>
-                            <th>Páginas</th>
-                            <th>Contacto</th>
-                            <th>Blog</th>
-                            <th>Correos</th>
-                            <th>Valor</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Básico</td>
-                                <td>Landing page</td>
-                                <td><span class="oi oi-check"></span></td>
-                                <td><span class="oi oi-x"></span></td>
-                                <td><span class="oi oi-check"></span> 1 Correo</td>
-                                <td><span class="oi oi-dollar"></span>300.000 / mes</td>
-                            </tr>
-                            <tr>
-                                <td>PYME</td>
-                                <td>Landing page y 2 Páginas</td>
-                                <td><span class="oi oi-check"></span></td>
-                                <td><span class="oi oi-x"></span></td>
-                                <td><span class="oi oi-check"></span> 5 Correos</td>
-                                <td><span class="oi oi-dollar"></span>700.000 / mes</td>
-                            </tr>
-                            <tr>
-                                <td>Corporativo</td>
-                                <td>Landing page y 5 Páginas</td>
-                                <td><span class="oi oi-check"></span></td>
-                                <td><span class="oi oi-check"></span></td>
-                                <td><span class="oi oi-check"></span> 10 Correos</td>
-                                <td><span class="oi oi-dollar"></span>1'300.000 / mes</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                            role="tab" aria-controls="nav-home" aria-selected="true">
+                            <h3>Sitios Web</h3>
+                        </a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                            role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <h3>Sistemas de Información</h3>
+                        </a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                            role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <h3>Automatizaciones</h3>
+                        </a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <th>Plan</th>
+                                    <th>Páginas</th>
+                                    <th>Contacto</th>
+                                    <th>Blog</th>
+                                    <th>Correos</th>
+                                    <th>Valor</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Básico</td>
+                                        <td>Landing page</td>
+                                        <td><span class="oi oi-check"></span></td>
+                                        <td><span class="oi oi-x"></span></td>
+                                        <td><span class="oi oi-check"></span> 1 Correo</td>
+                                        <td><span class="oi oi-dollar"></span>300.000 / mes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PYME</td>
+                                        <td>Landing page y 2 Páginas</td>
+                                        <td><span class="oi oi-check"></span></td>
+                                        <td><span class="oi oi-x"></span></td>
+                                        <td><span class="oi oi-check"></span> 5 Correos</td>
+                                        <td><span class="oi oi-dollar"></span>700.000 / mes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Corporativo</td>
+                                        <td>Landing page y 5 Páginas</td>
+                                        <td><span class="oi oi-check"></span></td>
+                                        <td><span class="oi oi-check"></span></td>
+                                        <td><span class="oi oi-check"></span> 10 Correos</td>
+                                        <td><span class="oi oi-dollar"></span>1'300.000 / mes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <th>Plan</th>
+                                    <th>Bases de Datos</th>
+                                    <th>Dominios</th>
+                                    <th>Subdominios</th>
+                                    <th>Valor</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Básico</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td><span class="oi oi-x"></span></td>
+                                        <td><span class="oi oi-dollar"></span>400.000 / mes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PYME</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td><span class="oi oi-check"></span></td>
+                                        <td><span class="oi oi-dollar"></span>800.000 / mes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Corporativo</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td><span class="oi oi-check"></span></td>
+                                        <td><span class="oi oi-dollar"></span>1'500.000 / mes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <p>
+                            Se cotizán en base al proyecto. Te invitamos a que nos dejes un mensaje para contactarte,
+                            haz clic
+                            <a href="contact.html">aquí</a>
+                        </p>
+                    </div>
                 </div>
-                <h3>Sistemas de Información</h3>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <th>Plan</th>
-                            <th>Bases de Datos</th>
-                            <th>Dominios</th>
-                            <th>Subdominios</th>
-                            <th>Valor</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Básico</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td><span class="oi oi-x"></span></td>
-                                <td><span class="oi oi-dollar"></span>400.000 / mes</td>
-                            </tr>
-                            <tr>
-                                <td>PYME</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td><span class="oi oi-check"></span></td>
-                                <td><span class="oi oi-dollar"></span>800.000 / mes</td>
-                            </tr>
-                            <tr>
-                                <td>Corporativo</td>
-                                <td>5</td>
-                                <td>3</td>
-                                <td><span class="oi oi-check"></span></td>
-                                <td><span class="oi oi-dollar"></span>1'500.000 / mes</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3>Preguntas Frecuentes</h3>
+                <div class="row">
+                    <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#requerimientos" aria-controls="multiCollapse1">¿Cómo envió mi
+                            proyecto?</button></div>
+                    <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#pago" aria-controls="multiCollapse2">¿Cómo puedo pagar?</button></div>
+                    <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#garantia" aria-controls="multiCollapse3">¿Cuánta garantía me dan?</button>
+                    </div>
                 </div>
-                <h3>Automatizaciones</h3>
-                <p>
-                    Se cotizán en base al proyecto. Te invitamos a que nos dejes un mensaje para contactarte, haz clic
-                    <a href="contact.html">aquí</a>
-                </p>
+                <div class="row">
+                    <div class="col-sm-4 collapse multi-collapse m-2" id="requerimientos">
+                        <h4>Requerimientos</h4>
+                        <p>
+                            Debes enviar un email a soporte@mailinator.com con un documento en word donde expliques todo
+                            lo que necesites, una vez recibido y analizado nos pondremos en contacto contigo por el
+                            email con el cual nos envias te el documento para cuadrar precios y tiempos de entrega.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 collapse multi-collapse m-2" id="pago">
+                        <h4>Pagos</h4>
+                        <p>
+                            Puedes realizar tus pagos por PSE o Transferencia Bancaria.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 collapse multi-collapse m-2" id="garantia">
+                        <h4>Garantía</h4>
+                        <p>
+                            Cada proyecto tiene un tiempo de garantía y soporte según las necesidades de los clientes.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
