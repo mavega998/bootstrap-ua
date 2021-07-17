@@ -124,7 +124,7 @@
     <div class="container mb-5 pb-5">
         <div class="row">
             <div class="col-12">
-                <h1>Nosotros</h1>
+                <h1 class="title-padding title-description">Nosotros</h1>
                 <div class="accordion" id="accordionExample">
                     <div class="card">
                         <div class="card-header" id="headingOne">
@@ -197,7 +197,7 @@
                     </div>
                 </div>
 
-                <h2 class="my-2">Nuestro Equipo</h2>
+                <h2 class="title-padding title-description">Nuestro Equipo</h2>
                 <div class="d-flex flex-row justify-contente-center align-items-between">
                     <div class="card mx-1">
                         <img src="https://image.flaticon.com/icons/svg/2922/2922506.svg" alt="Vitaly Gorbachev"
@@ -275,30 +275,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $("[data-toggle='tooltip']").tooltip();
-            $(".carousel").carousel({
-                interval: 3000
-            });
-            $('#pqrs').on('show.bs.modal', function (e) {
-                console.log('Comenzo a abrirse', e);
-                $('#pqrsBtn').addClass('disabled');
-                $('#pqrsBtn').addClass('btn-info');
-            });
-            $('#pqrs').on('shown.bs.modal', function (e) {
-                console.log('Terminó de abrirse', e);
-            });
-            $('#pqrs').on('hide.bs.modal', function (e) {
-                console.log('Comenzo a cerrarse', e);
-            });
-            $('#pqrs').on('hidden.bs.modal', function (e) {
-                console.log('Terminó de cerrarse ', e);
-                $('#pqrsBtn').removeClass('disabled')
-                $('#pqrsBtn').removeClass('btn-info')
-            });
-        });
-    </script>
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
