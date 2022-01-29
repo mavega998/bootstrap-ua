@@ -43,7 +43,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: './',
           src: 'assets/imgs/*.{png,gif,jpg,jpeg}',
-          dest: 'dist/'
+          dest: 'dist'
         }]
       }
     },
@@ -124,11 +124,12 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  // grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-contrib-sass');
+  // grunt.loadNpmTasks('grunt-browser-sync');
+  // grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.registerTask('css', ['sass'])
   grunt.registerTask('default', ['browserSync', 'watch'])
   grunt.registerTask('img:compress', ['imagemin'])
+  grunt.registerTask('build', ['clean', 'copy', 'imagemin', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'filerev', 'usemin'])
 };
