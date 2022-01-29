@@ -1,4 +1,9 @@
 module.exports = function (grunt) {
+  require('time-grunt')(grunt);
+  require('jit-grunt')(grunt, {
+    useminPrepare: 'grunt-usemin'
+  })
+
   grunt.initConfig({
     sass: {
       dist: {
@@ -40,6 +45,81 @@ module.exports = function (grunt) {
           src: 'assets/imgs/*.{png,gif,jpg,jpeg}',
           dest: 'dist/'
         }]
+      }
+    },
+    copy: {
+      html: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: './',
+          src: ['*.html'],
+          dest: 'dist/'
+        }]
+      }
+    },
+    clean: {
+      build: {
+        src: ['dist/']
+      }
+    },
+    cssmin: {
+      dist: {}
+    },
+    uglify: {
+      dist: {}
+    },
+    filerev: {
+      options: {
+        encoding: 'utf8',
+        algorithm: 'md5',
+        length: 20
+      },
+      release: {
+        files: [{
+          src: [
+            'dist/js/*.js',
+            'dist/css/*.css'
+          ]
+        }]
+      }
+    },
+    concat: {
+      options: {
+        separator: ';'
+      },
+      dist: {}
+    },
+    useminPrepare: {
+      foo: {
+        dest: 'dist/',
+        src: ['index.html', 'about.html', 'pricing.html', 'contact.html']
+      },
+      options: {
+        flow: {
+          steps: {
+            css: ['cssmin'],
+            js: ['uglify']
+          },
+          post: {
+            css: [{
+              name: 'cssmin',
+              createConfig: function(context, block) {
+                const generated = context.options.generated;
+                generated.options = {
+                  keepSpecialComments: 0,
+                  rebase: false
+                }
+              }
+            }]
+          }
+        }
+      }
+    },
+    usemin: {
+      html: ['dist/index.html', 'dist/about.html', 'dist/pricing.html', 'dist/contact.html'],
+      options: {
+        assetsDir: ['dist', 'dist/css', 'dist/js']
       }
     }
   });
