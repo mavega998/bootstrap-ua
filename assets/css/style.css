@@ -1,15 +1,24 @@
+.jumbotron {
+  background-color: #e9ecef !important;
+  color: #1d1c1c; }
+
+footer {
+  background-color: #34495e;
+  color: #ffffff; }
+
 .image {
-	background: #34495e;
-	width: 100%;
-	height: 200px;
-}
+  background: #34495e;
+  width: 100%;
+  height: 200px; }
 
 .image-cover {
-	object-fit: cover;
-	object-position: right top;
-}
+  object-fit: cover;
+  object-position: right top; }
 
-.separator {
-	border: 0.5px dashed #ddd;
-	width: 100%;
-}
+.img-padding-x {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.img-padding-y {
+  padding-top: 10px;
+  padding-bottom: 10px; }

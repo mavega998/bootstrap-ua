@@ -1,0 +1,57 @@
+@mixin margenes-y($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin margenes-x($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin padding-y($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin padding-x($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin dimensions($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+$primary: #e9ecef;
+$secondary: #34495e;
+$dark: #1d1c1c;
+$light: #ffffff;
+
+.jumbotron {
+    background-color: $primary !important;
+    color: $dark;
+}
+
+footer {
+    background-color: $secondary;
+    color: $light;
+}
+
+.image {
+	background: $secondary;
+    @include dimensions(100%, 200px);
+}
+
+.image-cover {
+	object-fit: cover;
+	object-position: right top;
+}
+
+.img-padding-x {
+    @include padding-x(10px, 10px);
+}
+
+.img-padding-y {
+    @include padding-y(10px, 10px);
+}
