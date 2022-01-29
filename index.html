@@ -154,7 +154,7 @@
             <h1 class="text-center">Productos</h1>
             <div class="d-flex flex-row card-deck">
                 <div class="card">
-                    <img src="https://image.flaticon.com/icons/svg/634/634161.svg" alt="Made by prettycons"
+                    <img src="assets/imgs/web-design.png" alt="Made by Maxim Basinski"
                         class="card-img-top p-3">
                     <div class="card-body">
                         <h2 class="text-muted card-title">Sitios Web</h2>
@@ -167,7 +167,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://image.flaticon.com/icons/svg/970/970729.svg" alt="Made by Nhor Phai"
+                    <img src="assets/imgs/digital.png" alt="Made by Eucalyp"
                         class="card-img-top p-3">
                     <div class="card-body">
                         <h2 class="text-muted card-title">Sistemas de Información</h2>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://image.flaticon.com/icons/svg/2979/2979638.svg" alt="Made by Freepik"
+                    <img src="assets/imgs/industrial-robot.png" alt="Made by Freepik"
                         class="card-img-top p-3">
                     <div class="card-body">
                         <h2 class="text-muted card-title">Automatizaciónes - Domotica</h2>
@@ -222,30 +222,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(function () {
-            $("[data-toggle='tooltip']").tooltip();
-            $(".carousel").carousel({
-                interval: 3000
-            });
-            $('#pqrs').on('show.bs.modal', function (e) {
-                console.log('Comenzo a abrirse', e);
-                $('#pqrsBtn').addClass('disabled');
-                $('#pqrsBtn').addClass('btn-info');
-            });
-            $('#pqrs').on('shown.bs.modal', function (e) {
-                console.log('Terminó de abrirse', e);
-            });
-            $('#pqrs').on('hide.bs.modal', function (e) {
-                console.log('Comenzo a cerrarse', e);
-            });
-            $('#pqrs').on('hidden.bs.modal', function (e) {
-                console.log('Terminó de cerrarse ', e);
-                $('#pqrsBtn').removeClass('disabled')
-                $('#pqrsBtn').removeClass('btn-info')
-            });
-        });
-    </script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

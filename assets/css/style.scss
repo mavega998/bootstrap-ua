@@ -1,46 +1,48 @@
-@mixin margenes-y($top, $bottom) {
-    margin-top: $top;
-    margin-bottom: $bottom;
-}
-
-@mixin margenes-x($left, $right) {
-    margin-left: $left;
-    margin-right: $right;
-}
-
-@mixin padding-y($top, $bottom) {
-    padding-top: $top;
-    padding-bottom: $bottom;
-}
-
-@mixin padding-x($left, $right) {
-    padding-left: $left;
-    padding-right: $right;
-}
-
-@mixin dimensions($width, $height) {
-    width: $width;
-    height: $height;
-}
-
 $primary: #e9ecef;
 $secondary: #34495e;
 $dark: #1d1c1c;
-$light: #ffffff;
+$light: #fff;
+$success: #2ace2a;
+$danger: #e41b1b;
+
+@mixin margenes-y($top, $bottom) {
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+@mixin margenes-x($left, $right) {
+	margin-left: $left;
+	margin-right: $right;
+}
+
+@mixin padding-y($top, $bottom) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+@mixin padding-x($left, $right) {
+	padding-left: $left;
+	padding-right: $right;
+}
+
+@mixin dimensions($width, $height) {
+	width: $width;
+	height: $height;
+}
 
 .jumbotron {
-    background-color: $primary !important;
-    color: $dark;
+	background-color: $primary !important;
+	color: $dark;
 }
 
 footer {
-    background-color: $secondary;
-    color: $light;
+	background-color: $secondary;
+	color: $light;
 }
 
 .image {
 	background: $secondary;
-    @include dimensions(100%, 200px);
+	@include dimensions(100%, 200px);
 }
 
 .image-cover {
@@ -54,4 +56,9 @@ footer {
 
 .img-padding-y {
     @include padding-y(10px, 10px);
+}
+
+.separator {
+	border: 0.5px dashed #000;
+	width: 100%;;
 }
